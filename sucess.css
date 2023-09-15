@@ -1,0 +1,45 @@
+:root {
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
+}
+
+body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+main {
+    background-color: var(--Charcoal-Grey);
+    text-align: center;
+    border-radius: 5px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+article img {
+
+}
+
+
+.title {
+
+}
+
+article p {
+
+}
+.btn {
+
+}
+
+.btn:hover {
+    background-color: var(--Dark-Slate-Grey);
+}

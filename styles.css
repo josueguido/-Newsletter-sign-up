@@ -1,0 +1,205 @@
+:root {
+    --Dark-Slate-Grey: hsl(234, 29%, 20%);
+    --Charcoal-Grey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
+}
+
+
+
+
+/* Media Query for Mobile*/
+@media (max-width: 375px) {
+
+
+/* Estilos para el cuerpo de la página */
+body {
+    font-family: Arial, sans-serif;
+    
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos para el contenedor principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Estilos para el artículo (la imagen) */
+article {
+    flex: 1;
+    margin-right: 20px;
+}
+
+/* Estilos para el aside (el contenido de texto y el formulario) */
+aside {
+    flex: 2;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para el título */
+.title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilos para la lista de elementos */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+/* Estilos para el campo de entrada de correo electrónico */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+input[type="email"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+
+/* Estilos para el enlace en el pie de página */
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+}
+
+
+
+/* Media Query for destok*/
+@media (max-width: 1440px) {
+    /* Estilos para el cuerpo de la página */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color:var(--Charcoal-Grey);
+    margin: 0;
+    padding: 0;
+    height: auto;
+    width: auto ;
+}
+
+/* Estilos para el contenedor principal */
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 800px; 
+    max-height: 550px;
+    margin: 50px auto;
+    padding: 50px;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    font-weight: 400;
+}
+
+/* Estilos para el artículo (la imagen) */
+article {
+   width: auto;
+   height: auto;
+}
+
+/* Estilos para el aside (el contenido de texto y el formulario) */
+aside {
+   padding: 5px;
+   margin-left: 50px;
+}
+
+/* Estilos para el título */
+.title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+
+/* Estilos para la lista de elementos */
+ul {
+    list-style-type: none;
+    padding-left: 0;
+    font-size: 0.90rem;
+}
+
+li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+li img {
+    margin-right: 10px; 
+}
+
+/* Estilos para el campo de entrada de correo electrónico */
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 0.80rem;
+}
+
+input[type="email"] {
+    width: 92%;
+    padding: 10px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+button {
+    margin-top: 10px;
+    background-color: var(--Dark-Slate-Grey);
+    font-size: 0.75rem;
+    color: #fff;
+    border-radius: 5px;
+    width: auto;
+    padding: 13px 80px;
+    min-width: 35px; /* Ancho mínimo para el botón */
+    min-height: 40px;
+}
+
+button:hover{
+    background-color: var(--Tomato);
+    color: var(--White);
+}
+
+/* Estilos para el pie de página */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color:var(--Dark-Slate-Grey);
+    color: #fff;
+    font: 400 0.90rem;
+}
+
+
+}
