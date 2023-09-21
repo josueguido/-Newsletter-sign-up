@@ -7,199 +7,323 @@
 }
 
 
-
-
 /* Media Query for Mobile*/
-@media (max-width: 375px) {
+@media only screen and (max-width : 375px) {
 
 
-/* Estilos para el cuerpo de la página */
-body {
-    font-family: Arial, sans-serif;
-    
-    margin: 0;
-    padding: 0;
-}
+    .desktop-image {
+        display: none;
+        /* Ocultar la imagen en dispositivos móviles */
+    }
 
-/* Estilos para el contenedor principal */
-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-}
 
-/* Estilos para el artículo (la imagen) */
-article {
-    flex: 1;
-    margin-right: 20px;
-}
+    .mobile-image {
+        display: block;
+    }
 
-/* Estilos para el aside (el contenido de texto y el formulario) */
-aside {
-    flex: 2;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+    .mobile-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: auto;
+        display: block;
+        border-radius: 10px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin-bottom: 20px;
 
-/* Estilos para el título */
-.title {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
+    }
 
-/* Estilos para la lista de elementos */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
 
-li {
-    margin-bottom: 10px;
-}
 
-/* Estilos para el campo de entrada de correo electrónico */
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-}
+    /* Estilos para el cuerpo de la página */
+    body {
+        font-family: 'Roboto', sans-serif;
+        margin: 0;
+        padding: 0;
+        max-width: 375px;
+        height: auto;
+    }
 
-input[type="email"] {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
 
-/* Estilos para el pie de página */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    color: #fff;
-}
 
-/* Estilos para el enlace en el pie de página */
-footer a {
-    color: #fff;
-    text-decoration: none;
-}
+    /* Estilos para el contenedor principal */
+    main {
+        display: grid;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: start;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        font-weight: 400;
+        margin: auto;
+        padding: auto;
+        height: 760px;
+    }
+
+    /* Estilos para el aside (el contenido de texto y el formulario) */
+    aside {
+        margin: 50%;
+        order: 2;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        flex: 2;
+        background-color: #fff;
+        padding: 0;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+    }
+
+    article {
+        margin-top: 270px;
+    }
+
+    /* Estilos para el título */
+    .title {
+        font-size: 1rem;
+        margin-bottom: 20px;
+        text-align: center;
+        font-size: 2.5rem;
+    }
+
+
+    .paragraph {
+        text-align: start;
+        margin-left: 5px;
+    }
+
+
+    /* Estilos para la lista de elementos */
+    ul {
+        list-style-type: none;
+        padding-right: 0;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    /* Estilos para el campo de entrada de correo electrónico */
+    label {
+        font-weight: 'Roboto';
+        margin: 15px;
+        padding: 5px;
+        font: 0.90rem 700;
+        color: var(--Dark-Slate-Grey);
+    }
+
+    input[type="email"] {
+        width: 83%;
+        padding: 15px;
+        margin: auto;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 0.90rem;
+        display: flex;
+        text-align: start;
+        align-items: center;
+    }
+
+    .btn-1 {
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin-top: 25px;
+        padding: 15px;
+        background-color: var(--Dark-Slate-Grey);
+        font-size: 0.75rem;
+        color: #fff;
+        border-radius: 5px;
+        width: 330px;
+        height: 50px;
+        margin-left: auto;
+        margin-right: auto
+    }
+
+    button:hover {
+        background-color: var(--Tomato);
+        color: var(--White);
+        text-align: center;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #333;
+        color: #fff;
+        margin-top: 5px;
+    }
+
+    /* Estilos para el enlace en el pie de página */
+    footer a {
+        color: #fff;
+        text-decoration: none;
+    }
 }
 
 
 
 /* Media Query for destok*/
-@media (max-width: 1440px) {
-    /* Estilos para el cuerpo de la página */
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color:var(--Charcoal-Grey);
-    margin: 0;
-    padding: 0;
-    height: auto;
-    width: auto ;
-}
-
-/* Estilos para el contenedor principal */
-main {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 800px; 
-    max-height: 550px;
-    margin: 50px auto;
-    padding: 50px;
-    background-color: #f0f0f0;
-    border-radius: 10px;
-    font-weight: 400;
-}
-
-/* Estilos para el artículo (la imagen) */
-article {
-   width: auto;
-   height: auto;
-}
-
-/* Estilos para el aside (el contenido de texto y el formulario) */
-aside {
-   padding: 5px;
-   margin-left: 50px;
-}
-
-/* Estilos para el título */
-.title {
-    font-size: 3rem;
-    font-weight: 700;
-    margin-bottom: 20px;
-}
+@media only screen and (min-width: 1000px) and (max-width: 1440px) {
 
 
-/* Estilos para la lista de elementos */
-ul {
-    list-style-type: none;
-    padding-left: 0;
-    font-size: 0.90rem;
-}
 
-li {
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
+    /* Estilo predeterminado para ambas imágenes */
+    .desktop-image {
+        display: block;
+        /* Mostrar la imagen en pantallas de escritorio */
+    }
 
-li img {
-    margin-right: 10px; 
-}
+    .mobile-image {
+        display: none;
+        /* Ocultar la imagen en pantallas de escritorio */
+    }
 
-/* Estilos para el campo de entrada de correo electrónico */
-label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 10px;
-    font-size: 0.80rem;
-}
+    .desktop-image {
+        max-width: 100%;
+        max-height: 100%;
+    }
 
-input[type="email"] {
-    width: 92%;
-    padding: 10px;
-    border: 1px solid #333;
-    border-radius: 5px;
-    font-size: 0.85rem;
-    cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-}
 
-button {
-    margin-top: 10px;
-    background-color: var(--Dark-Slate-Grey);
-    font-size: 0.75rem;
-    color: #fff;
-    border-radius: 5px;
-    width: auto;
-    padding: 13px 80px;
-    min-width: 35px; /* Ancho mínimo para el botón */
-    min-height: 40px;
-}
 
-button:hover{
-    background-color: var(--Tomato);
-    color: var(--White);
-}
+    body {
+        font-family: 'Roboto', sans-serif;
+        background-color: var(--Charcoal-Grey);
+        height: auto;
+        margin: 0;
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
 
-/* Estilos para el pie de página */
-footer {
-    text-align: center;
-    padding: 10px;
-    background-color:var(--Dark-Slate-Grey);
-    color: #fff;
-    font: 400 0.90rem;
-}
+    /* Estilos para el contenedor principal */
+    main {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 660px;
+        max-height: 500px;
+        margin: 0 auto;
+        padding: 50px;
+        background-color: #f0f0f0;
+        border-radius: 10px;
+        font-weight: 400;
+    }
 
+    /* Estilos para el artículo (la imagen) */
+    article {
+        margin-right: 10px;
+        width: auto;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        flex: 1;
+    }
+
+    /* Estilos para el aside (el contenido de texto y el formulario) */
+    aside {
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        /* Permitir que el aside ocupe el espacio restante */
+        padding: 5px;
+        margin-left: 20px;
+        flex: 1;
+    }
+
+    /* Estilos para el título */
+    .title {
+        font-size: 3rem;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+
+
+    /* Estilos para la lista de elementos */
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        font-size: 0.90rem;
+    }
+
+    li {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+    }
+
+    li img {
+        margin-right: 10px;
+    }
+
+    /* Estilos para el campo de entrada de correo electrónico */
+    label {
+        display: block;
+        font-size: 0.80rem;
+        flex: 1;
+    }
+
+    input[type="email"] {
+        width: 92%;
+        padding: 10px;
+        border: 1px solid #333;
+        border-radius: 5px;
+        font-size: 0.85rem;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
+    .btn-1 {
+        margin-top: 10px;
+        background-color: var(--Dark-Slate-Grey);
+        font-size: 0.75rem;
+        color: #fff;
+        border-radius: 5px;
+        width: auto;
+        padding: 10px 96px;
+        min-width: 75px;
+        min-height: 30px;
+    }
+
+    .btn-1:hover {
+        background-color: var(--Tomato);
+        color: var(--White);
+    }
+
+    /* Estilos para el mensaje de error */
+    .error-message {
+        color: red;
+        font-size: 0.75rem;
+        margin-top: 5px;
+        display: block;
+    }
+
+    /* Estilos para el contenedor del campo de entrada de correo electrónico */
+    .email-container {
+        margin-bottom:10px ;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    /* Estilos para el pie de página */
+    footer {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        /* Centrar horizontalmente */
+        margin-top: 15px;
+        padding: 10px;
+        background-color: var(--Dark-Slate-Grey);
+        color: #fff;
+        font: 400 0.90rem;
+    }
 
 }
