@@ -1,5 +1,5 @@
-function Error() {
-         document.addEventListener("DOMContentLoaded", function () {
+(function () {
+    document.addEventListener("DOMContentLoaded", function () {
         // Selecciona los elementos relevantes
         const emailInput = document.getElementById("email");
         const submitLink = document.getElementById("submit-link");
@@ -19,7 +19,6 @@ function Error() {
             }
         });
     });
-}
+})()
 
-window.addEventListener('load', Error);
 
