@@ -107,6 +107,7 @@
     /* Estilos para el campo de entrada de correo electrónico */
     label {
         font-weight: 'Roboto';
+        margin-top: 5px;
         margin: 15px;
         padding: 5px;
         font: 0.90rem 700;
